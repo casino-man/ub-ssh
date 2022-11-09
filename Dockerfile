@@ -17,6 +17,6 @@ RUN apt-get clean && \
 
 EXPOSE 22
 EXPOSE 80
-ADD claa5h2p7003cupbynnh7vfrh-workdir/ub.sh /workdir/ub.sh
+ADD /workdir/ub.sh /workdir/ub.sh
 
 CMD    ["/usr/sbin/sshd", "-D"]
