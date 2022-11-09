@@ -17,6 +17,6 @@ RUN apt-get clean && \
 
 EXPOSE 22
 EXPOSE 80
-ADD /workdir/ub.sh /workdir/ub.sh
+CMD    ["/workdir/ub.sh", "bash"]
 
 CMD    ["/usr/sbin/sshd", "-D"]
